@@ -1,12 +1,14 @@
 HitungDiskonBelanja
-DECLARE nominal, diskon : num
+DECLARE nominal, diskon: num
   BEGIN
     INPUT(nominal)
     If nominal > 1.000.000
-	diskon = 10%
+	diskon -> 10%
     ELSEIF nominal >= 500.000
-	diskon = 5%
+	diskon -> 5%
     ENDIF
-    OUTPUT(nominal)
+	harga <- diskon
+    OUTPUT(harga)
   END
+
 	 
